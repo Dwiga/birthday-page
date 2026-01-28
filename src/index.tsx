@@ -1,6 +1,7 @@
 import { render } from 'solid-js/web';
 
 import { BirthdayCard } from './birthday-card';
+import { BirthdayRouter } from './birthday-links';
 
 const root = document.getElementById('root');
 
@@ -10,4 +11,10 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <BirthdayCard />, root!);
+// Render the application with birthday router integration
+// Requirements: 4.3, 4.4 - Integrate with existing application structure
+render(() => (
+  <BirthdayRouter>
+    <BirthdayCard />
+  </BirthdayRouter>
+), root!);
