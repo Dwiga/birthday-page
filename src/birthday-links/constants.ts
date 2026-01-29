@@ -43,7 +43,7 @@ export interface PageContent {
 
 // Static content definitions
 export const BIRTHDAY_CONTENT: PageContent = {
-  message: 'Happy birthday',
+  message: "Press 'love' reaction in zoom",
   pageType: 'birthday'
 } as const;
 
